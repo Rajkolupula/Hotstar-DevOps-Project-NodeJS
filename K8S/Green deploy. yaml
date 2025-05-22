@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hotstar-green
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hotstar
+      version: green
+  template:
+    metadata:
+      labels:
+        app: hotstar
+        version: green
+    spec:
+      containers:
+      - name: hotstar
+        image: rajukolupula/hotstar:latest  # Change the tag if needed
+        ports:
+        - containerPort: 3000
