@@ -5,7 +5,7 @@ metadata:
 spec:
   selector:
     app: hotstar
-    version: blue  # Switch this to "green" to direct traffic to the green deployment
+    version: green  # Switch this to "green" to direct traffic to the green deployment
   ports:
   - protocol: TCP
     port: 80
