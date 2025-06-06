@@ -15,7 +15,7 @@ spec:
         version: green
     spec:
       containers:
-      - name: hotstar
-        image: nginx: # Change the tag if needed
+      - name: nginx
+        image: nginx:latest
         ports:
-        - containerPort: 3000
+        - containerPort: 80
