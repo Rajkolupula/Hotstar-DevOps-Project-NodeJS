@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: hotstar
-        image: nginx:latest # Change the tag if needed
+        image: nginx: # Change the tag if needed
         ports:
         - containerPort: 3000
